@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.k17124kk.randomteammaker.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="363dp"
+        android:layout_height="502dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="316dp"
+            android:layout_alignBottom="@+id/MemberSpinner"
+            android:layout_toStartOf="@+id/StartButton" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="チーム"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="316dp"
+            android:layout_alignBottom="@+id/TeamSpinner"
+            android:layout_toEndOf="@+id/TeamSpinner" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全人数"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="247dp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toStartOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="分けるチーム数"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="247dp"
+            android:layout_marginEnd="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:text="Button"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="336dp" />
+
+        <Spinner
+            android:id="@+id/TeamSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:entries="@array/Num"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="293dp"
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <Spinner
+            android:id="@+id/MemberSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/Num"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="293dp"
+            android:layout_alignBaseline="@+id/TeamSpinner"
+            android:layout_alignBottom="@+id/TeamSpinner"
+            android:layout_toStartOf="@+id/textView4" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

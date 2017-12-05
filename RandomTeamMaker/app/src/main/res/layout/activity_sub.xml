@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/NumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N人目"
+            android:textSize="30sp"
+            android:layout_above="@+id/ResultButton"
+            android:layout_toStartOf="@+id/ResultButton"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="146dp" />
+
+        <TextView
+            android:id="@+id/ResultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/NumText"
+            android:layout_alignBottom="@+id/NumText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="27dp"
+            android:text="チーム番号"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/ResultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="117dp"
+            android:text="Button" />
+    </RelativeLayout>
+
+</LinearLayout>
